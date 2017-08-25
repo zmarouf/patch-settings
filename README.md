@@ -2,7 +2,7 @@
 
 A module for managing settings in patch-* family apps. Settings are persisted to localStorage, and a couple of little methods are provided for gettings, settings, and observing!
 
-You'll need to understand [depject](https://github.com/depject/depject) (a module for a different way of managing dependency injection), and for hte example below, [depnest](https://github.com/depject/depnest) - a lazy way to write nested objects quickly.
+You'll need to understand [depject](https://github.com/depject/depject) (a module for a different way of managing dependency injection), and for the example below, [depnest](https://github.com/depject/depnest) - a lazy way to write nested objects quickly.
 
 ## Example 
 
@@ -74,14 +74,14 @@ api.settings.sync.get('colors.secondary', 'white')
 
 `(newSettings=object)`
 
-Uses [lodash/merge](https://lodash.com/docs/4.17.4#get) to recurssively merge newSettings into settings.
+Uses [lodash/merge](https://lodash.com/docs/4.17.4#get) to recursively merge newSettings into settings.
 
 Example:
 ```js
 api.settings.sync.set({ 
   colors: {
     primary: 'pink',
-    secondary: 'teal
+    secondary: 'teal'
   }
 })
 // => undefined
